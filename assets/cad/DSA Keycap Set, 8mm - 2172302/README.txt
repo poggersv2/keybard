@@ -1,0 +1,4 @@
+DSA Keycap Set, 8mm by kaelruland on Thingiverse: https://www.thingiverse.com/thing:2172302
+
+Summary:
+The new home of my DSA keycap project. This set includes 1u, 1u homing, 1.25u, 1.5u, 1.75u, 2u, 2.25u and 2.75u keys and a 6.25u spacebar. Mounts are standard MX. The 2u, 2.25u and 2.75u keys have three mounts spaced at 12mm from the center. The 6.25u spacebar has three mounts @ 50mm from the center. Mounts are flush with the bottom of the key so supports shouldn't be necessary. All keycaps are 18.2mm wide and n*(19mm) - 0.8mm long, where n is the unit length of the key. The height of the key is just under 8mm and the depth of the touch surface is 0.9mm below that. Minimum wall thickness is 1.8mm.

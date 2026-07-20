@@ -1,0 +1,7 @@
+(version 1)
+(rule Minimum_clearance_1
+	(constraint clearance (min 0.1mm))
+)
+(rule Copper_to_edge_clearance_1
+	(constraint edge_clearance (min 0.2mm))
+)
