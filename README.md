@@ -65,8 +65,6 @@ This firmware is pre-configured with **Vial** , meaning you can remap your keys,
 2. Plug in your keyboard and click **Authorize** (if using the web version) or let the app detect it.
 3. Remap to your hearts content!
 
-## AI Disclosure
-No part of this project, including the PCB routing, CAD design, and documentation, was created using AI, with the exception of the key mapping for firmware. 
 
 ## Credits
 * **Hack Club**

@@ -21,14 +21,8 @@ rows = 5
 cols = 17
 layers = 2
 
-# Column map (from keyboard-layout.json), for reference:
-#  0=Esc/Grave-row  1-10=digits  11=- 12== 13=Backspace  14=(unused) 15=(unused) 16=macro column
-#  Row0: number row      Row1: QWERTY row     Row2: home row (caps)
-#  Row3: shift row (col15=Up arrow, col16=Macro3) Row4: bottom row (col14-16=Left/Down/Right arrows)
-#  col16 rows 0-3 = 4 dedicated macro keys (Macro0..Macro3).
 keymap = [
     [
-        # Layer 0 - base
         ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "No", "No", "Macro0"],
         ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "Backslash", "No", "No", "Macro1"],
         ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "No", "Enter", "No", "No", "Macro2"],
@@ -36,8 +30,6 @@ keymap = [
         ["LCtrl", "LGui", "LAlt", "No", "No", "No", "Space", "No", "No", "No", "RAlt", "MO(1)", "RGui", "RCtrl", "Left", "Down", "Right"]
     ],
     [
-        # Layer 1 - Fn (mostly transparent; F-keys live over the number row,
-        # Backspace/Delete swap under Fn).
         ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Delete", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
