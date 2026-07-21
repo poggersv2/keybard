@@ -1,5 +1,7 @@
 # keybard (it's not misspelt)
 
+![Keybard](https://github.com/poggersv2/keybard/blob/main/assets/readme/case_render.png)
+
 ## Overview
 **keybard** is a custom mechanical keyboard designed for Hackclub Keeb. Its a modified 60% layout, extended with a dedicated arrow key cluster and a column of macro keys on the side. 
 
@@ -18,7 +20,7 @@ Standard 60% keyboards are great for desk space but I wanted to have the arrow k
 Designing and building this board from scratch was kindda difficult: 
 
 ### 1. Switch Matrix 
-Routing the matrix required while making it look decent was hard.
+Routing the matrix while making it look decent was hard.
 
 ### 2. Tolerances 
 When designing the case, I found it hard to imagine the actual size of everything. The maths was a little hard to understand, but that got easier over time.
