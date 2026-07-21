@@ -1,4 +1,4 @@
-# keybard
+# keybard (it's not misspelt)
 
 ## Overview
 **keybard** is a custom mechanical keyboard designed for Hackclub Keeb. Its a modified 60% layout, extended with a dedicated arrow key cluster and a column of macro keys on the side. 
