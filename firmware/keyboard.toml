@@ -1,4 +1,5 @@
 # Documentation: https://rmk.rs/docs/configuration.html
+
 [keyboard]
 name = "keybard"
 product_name = "keybard"
@@ -8,27 +9,42 @@ manufacturer = "poggersv2"
 chip = "rp2040"
 
 [matrix]
+
 row_pins = ["PIN_1", "PIN_22", "PIN_21", "PIN_20", "PIN_19"]
-col_pins = ["PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11", "PIN_10", "PIN_9", "PIN_8", "PIN_7", "PIN_6", "PIN_5", "PIN_4", "PIN_3", "PIN_2", "PIN_16", "PIN_17", "PIN_18"]
+col_pins = [
+    "PIN_14", "PIN_13", "PIN_12", "PIN_11", "PIN_10", "PIN_9", "PIN_8",
+    "PIN_7", "PIN_6", "PIN_5", "PIN_4", "PIN_3", "PIN_2", "PIN_1",
+    "PIN_16", "PIN_17", "PIN_18"
+]
+
+# RMK defaults to col2row. Flip this if your diodes are wired the other way.
+# row2col = true
 
 [layout]
 rows = 5
 cols = 17
 layers = 2
 
+# Column map (from keyboard-layout.json), for reference:
+#  0=Esc/Grave-row  1-10=digits  11=- 12== 13=Backspace  14=(unused) 15=(unused) 16=nav-column
+#  Row0: number row      Row1: QWERTY row     Row2: home row (caps)
+#  Row3: shift row (col15=Up, col16=PageDown) Row4: bottom row (col14-16=Left/Down/Right)
 keymap = [
     [
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        # Layer 0 - base
+        ["Grave", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "No", "No", "Delete"],
+        ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LeftBracket", "RightBracket", "Backslash", "No", "No", "Home"],
+        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "No", "Enter", "No", "No", "PageUp"],
+        ["LShift", "No", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "No", "RShift", "No", "Up", "PageDown"],
+        ["LCtrl", "LGui", "LAlt", "No", "No", "No", "Space", "No", "No", "No", "RAlt", "MO(1)", "RGui", "RCtrl", "Left", "Down", "Right"]
+    ],
+    [
+        # Layer 1 - Fn (mostly transparent; F-keys live over the number row,
+        # Backspace/Delete swap under Fn). Customize freely.
+        ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Delete", "_", "_", "Insert"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "End"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
     ],
-    [
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
-    ]
 ]
