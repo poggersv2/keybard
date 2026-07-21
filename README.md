@@ -29,8 +29,12 @@ Before this project, I didn't really know how to use Fusion. I had to learn ever
 ## Hardware Details
 
 ### Schematic
-screenshot
+![Schematic](https://github.com/poggersv2/keybard/blob/main/assets/readme/schematic.png?raw=true)
+
 ### PCB
-screenshot
+![PCB](https://github.com/poggersv2/keybard/blob/main/assets/readme/pcb.png?raw=true)
+![PCB Front](https://github.com/poggersv2/keybard/blob/main/assets/readme/pcb_front.png?raw=true)
+![PCB Back](https://github.com/poggersv2/keybard/blob/main/assets/readme/pcb_back.png?raw=true)
+
 ### Case
-screenshots
+![Case](https://github.com/poggersv2/keybard/blob/main/assets/readme/case.png?raw=true)
