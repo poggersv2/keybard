@@ -9,7 +9,7 @@ The board is powered by a Raspberry Pi Pico (Orpheus Pico) and uses a sandwich m
 - **Layout:** Modified 60% + Arrow Keys + Macro Column
 - **Microcontroller:** Raspberry Pi Pico / Orpheus Pico (RP2040)
 - **Mounting Style:** Sandwich Mount
-- **Firmware:** QMK / KMK compatible
+- **Firmware:** RMK with VIA support
 
 ## Why I Built It
 Standard 60% keyboards are great for desk space but I wanted to have the arrow keys for productivity (and also games).
