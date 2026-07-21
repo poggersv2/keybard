@@ -1,35 +1,43 @@
 # Documentation: https://rmk.rs/docs/configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
+name = "keybard"
+product_name = "keybard"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "RMK"
+manufacturer = "poggersv2"
 chip = "rp2040"
 
 [matrix]
-# Row and col pins are mandatory
-row_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-col_pins = ["PIN_19", "PIN_20", "PIN_21"]
-
-# RMK uses col2row as the default matrix diode direction, if you want to use a row2col matrix, add `row2col = true`
-# row2col = true
+row_pins = ["PIN_1", "PIN_22", "PIN_21", "PIN_20", "PIN_19"]
+col_pins = ["PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11", "PIN_10", "PIN_9", "PIN_8", "PIN_7", "PIN_6", "PIN_5", "PIN_4", "PIN_3", "PIN_2", "PIN_16", "PIN_17", "PIN_18"]
 
 [layout]
-rows = 4
-cols = 3
+rows = 5
+cols = 17
 layers = 2
 keymap = [
     [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+        # Row 0: Esc, 1-0, -, =, Backspace. Macro 1 
+        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Minus", "Equal", "Backspace", "_", "_", "F1"],
+        
+        # Row 1: Tab, Q-P, [, ], \. Macro 2 
+        ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "LBracket", "RBracket", "Backslash", "_", "_", "F2"],
+        
+        # Row 2: CapsLock, A-L, ;, ', (gap at col 12), Enter. Macro 3
+        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote", "_", "Enter", "_", "_", "F3"],
+        
+        # Row 3: LShift, (gap at col 1), Z-/, (gap at col 12), RShift. Up arrow at col 15. Macro 4
+        ["LShift", "_", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "_", "RShift", "_", "Up", "F4"],
+        
+        # Row 4: LCtrl, LGui, LAlt, (gaps), Space, (gaps), RAlt, RGui, Menu, RCtrl. Left, Down, Right arrows at cols 14-16.
+        ["LCtrl", "LGui", "LAlt", "_", "_", "_", "Space", "_", "_", "_", "RAlt", "RGui", "MO(1)", "RCtrl", "Left", "Down", "Right"]
     ],
     [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
-    ],
+        # Layer 1 (Function Layer)
+        ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "Delete", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+    ]
 ]
