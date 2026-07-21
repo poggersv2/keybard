@@ -40,3 +40,28 @@ Before this project, I didn't really know how to use Fusion. I had to learn ever
 
 ### Case
 ![Case](https://github.com/poggersv2/keybard/blob/main/assets/readme/case.png?raw=true)
+
+## Firmware
+### How to Compile and Flash
+### 1. Get the Firmware
+1. Go to the **Actions** tab at the top of this GitHub repository.
+2. Click on the latest successful run of the **Build RMK firmware** workflow.
+3. Scroll down to the **Artifacts** section at the bottom of the page.
+4. Download the compiled firmware `.zip` file and extract it to find your `.uf2` file.
+
+### 2. Flash to the Keyboard
+1. Unplug your keyboard.
+2. Hold down the **BOOTSEL** button on your Raspberry Pi Pico.
+3. While holding the button, plug the keyboard back into your computer via USB. 
+4. A new mass storage drive will appear on your computer.
+5. Drag and drop the `.uf2` firmware file into this drive.
+6. The Pico will automatically reboot, and your keyboard is ready to use!
+
+## Customization
+### Keymap Editing (Vial)
+This firmware is pre-configured with **Vial** , meaning you can remap your keys, setup macros, and change layers without needing to recompile firmware.
+
+1. Download the Vial app or use the Web UI at [vial.rocks](https://vial.rocks/).
+2. Plug in your keyboard and click **Authorize** (if using the web version) or let the app detect it.
+3. Remap to your hearts content!
+
